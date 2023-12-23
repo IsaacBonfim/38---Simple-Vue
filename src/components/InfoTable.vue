@@ -8,23 +8,23 @@
     <tbody>
       <tr>
         <td class="bold">Meu Nome</td>
-        <td>Isaac Oliveira</td>
+        <td>{{myName}}</td>
       </tr>
       <tr>
         <td class="bold">Idade</td>
-        <td>31 Anos</td>
+        <td>{{myAge}} Anos</td>
       </tr>
       <tr>
         <td class="bold">Aniversário</td>
-        <td>27 de Dezembro</td>
+        <td>{{myBirth}}</td>
       </tr>
       <tr>
         <td class="bold">Onde Moro</td>
-        <td>Betim - MG</td>
+        <td>{{myAdress}}</td>
       </tr>
       <tr>
         <td class="bold">Formação</td>
-        <td>Sup. Imcompleto</td>
+        <td>{{mySchooling}}</td>
       </tr>
     </tbody>
   </table>
@@ -32,7 +32,14 @@
 
 <script>
 export default {
-  name: 'InfoTable'
+  name: 'InfoTable',
+  props: {
+    myName: String,
+    myAge: Number,
+    myBirth: String,
+    myAdress: String,
+    mySchooling: String
+  }
 }
 </script>
 

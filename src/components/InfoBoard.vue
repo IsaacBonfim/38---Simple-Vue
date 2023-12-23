@@ -4,7 +4,13 @@
       <MyImage />
     </section>
     <section class="area-2">
-      <InfoTable />
+      <InfoTable
+        myName="Isaac Oliveira"
+        myAge=31
+        myBirth="27 de Dezembro"
+        myAdress="Betim - MG"
+        mySchooling="Sup. Imcompleto"
+      />
     </section>
     <section class="area-3">
       <h1>Oi</h1>

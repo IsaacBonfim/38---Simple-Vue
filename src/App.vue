@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <VueHeader />
+  <div class="board-container">
+    <InfoBoard />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import InfoBoard from './components/InfoBoard.vue'
+import VueHeader from './components/VueHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    InfoBoard,
+    VueHeader
   }
 }
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-image: url('./assets/layered-waves-haikei.svg');
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.board-container {
+  align-items: center;
+  display: flex;
+  height: 92vh;
+  width: 100vw;
+  justify-content: center;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <img class="image" alt="Vue logo" src="../assets/Eu.jpeg" />
+  <img class="image" alt="Foto pessoal" src="../assets/Eu.jpeg" />
 </template>
 
 <script>

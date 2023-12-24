@@ -35,7 +35,7 @@ export default {
   name: 'InfoTable',
   props: {
     myName: String,
-    myAge: Number,
+    myAge: String,
     myBirth: String,
     myAdress: String,
     mySchooling: String

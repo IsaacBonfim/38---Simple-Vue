@@ -6,14 +6,14 @@
     <section class="area-2">
       <InfoTable
         myName="Isaac Oliveira"
-        myAge=31
+        myAge="31"
         myBirth="27 de Dezembro"
         myAdress="Betim - MG"
         mySchooling="Sup. Imcompleto"
       />
     </section>
     <section class="area-3">
-      <h1>Oi</h1>
+      <MyInformation />
     </section>
   </div>
 </template>
@@ -21,12 +21,14 @@
 <script>
 import InfoTable from './InfoTable.vue'
 import MyImage from './MyImage.vue'
+import MyInformation from './MyInformation.vue'
 
 export default {
   name: 'InfoBoard',
   components: {
     InfoTable,
-    MyImage
+    MyImage,
+    MyInformation
   }
 }
 </script>
@@ -68,6 +70,8 @@ export default {
   }
 
   .area-3 {
+    align-items: center;
+    flex-direction: column;
     height: 50%;
     width: 100%;
   }
